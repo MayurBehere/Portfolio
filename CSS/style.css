@@ -673,49 +673,55 @@ display: inline-block;
     margin-top: 10px;
 }
 
-/* Media Queries */
-
-@media(max-width:1300px){
-
-    .aside{
+/* Media Query for screens with a maximum width of 1300px */
+@media (max-width: 1300px) {
+    .aside {
         left: -270px;
     }
 
-    .main-content{
+    .main-content {
         padding-left: 0;
     }
 
-    .about .about-content .personal-info .info-items p span{
-        display: block;
-        margin-left: 0;
-    }
+    /* Some specific styles for screens up to 1300px wide */
 }
 
-@media(max-width:910px){
-
-    .home .home-info, .about .about-content .education, .about .about-content .experience{
-       flex: 0 0 100%;
-       max-width: 100%; 
-    }
-
-    .home .home-img{
-        display: none;
-    }
-
-    .service .service-item,  .portfolio .portfolio-items, .contact .contact-info-item{
-        flex: 0 0 50%;
-        max-width: 50%;
-    
-    }
-
-}
-
-@media(max-width:743px){
-
-    .about .about-content .personal-info, .about .about-content .skills,.about .about-content .education, .about .about-content .experience,.service .service-item,.portfolio .portfolio-items,.contact .contact-info-item{
+/* Media Query for screens with a maximum width of 910px */
+@media (max-width: 910px) {
+    .home .home-info,
+    .about .about-content .education,
+    .about .about-content .experience {
         flex: 0 0 100%;
         max-width: 100%;
     }
 
+    .home .home-img {
+        display: none;
+    }
 
+    .service .service-item,
+    .portfolio .portfolio-items,
+    .contact .contact-info-item {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+
+    /* Styles for screens up to 910px wide */
+}
+
+/* Media Query for screens with a maximum width of 480px */
+@media (max-width: 480px) {
+    .about .about-content .personal-info,
+    .about .about-content .skills,
+    .about .about-content .education,
+    .about .about-content .experience,
+    .service .service-item,
+    .portfolio .portfolio-items,
+    .contact .contact-info-item {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    
+
+    /* Styles for screens up to 480px wide */
 }
