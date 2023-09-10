@@ -453,6 +453,7 @@ display: inline-block;
     max-width: 50%;
     margin-top: 100px;
     margin-bottom: 100px;
+    color: var(--text-black-700);
 }
 
 .about .about-content h3 .title{
@@ -737,6 +738,11 @@ display: inline-block;
         max-width: 100%;
     }
     .about .about-content .personal-info .info-items{
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    body{
         flex: 0 0 100%;
         max-width: 100%;
     }
