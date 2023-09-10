@@ -251,7 +251,7 @@ body{
     transition: color 0.3s ease;
 }
 
-.aside .nav li a.active{
+.aside .nav li .active{
     color: var(--skin-colour);
 }
 
