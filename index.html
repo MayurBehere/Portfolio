@@ -7,12 +7,16 @@
       <!--======CSS Files======-->
       <link href="./CSS/style.css" rel="stylesheet" />
       <link href="./CSS/colours1.css" rel="stylesheet" />
-      <link
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
-        rel="stylesheet"
-      />
+      <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" rel="stylesheet"/>
+      <!-- STYLE SHIFTER -->
+      <link href="./CSS/colours1.css" rel="stylesheet" class="alternative-style" title="color-1" disabled/>
+      <link href="./CSS/colours2.css" rel="stylesheet" class="alternative-style" title="color-2" disabled/>
+      <link href="./CSS/colours3.css" rel="stylesheet" class="alternative-style" title="color-3" disabled/>
+      <link href="./CSS/colours4.css" rel="stylesheet" class="alternative-style" title="color-4" disabled/>
+      <link href="./CSS/colours5.css" rel="stylesheet" class="alternative-style" title="color-5" disabled/>
+      <link rel="stylesheet" href="./CSS/StyleSwitcher.css">
     </head>
-    <body>
+    <body >
       <!-- Main Container starts-->
 
       <!-- Aside starts-->
@@ -108,7 +112,6 @@
                     <div class="row">
                       <div class="buttons padd-15">
                         <a href="#" class="btn">Download CV</a>
-                        <a href="#contact" class="btn hire-me">Hire me</a>
                       </div>
                     </div>
                   </div>
@@ -382,6 +385,27 @@
       </div>
       <!-- Main-content ends-->
       <!-- End Container-->
-      <script src="./JS/index.js"></script>
+      <!-- Style Switcher Starts -->
+      <div class="style-switcher">
+        <div class="style-switcher-toggler s-icon">
+          <i class="fas fa-cog fa-spin"></i>
+        </div>
+        <div class="day-night s-icon">
+          <i class="fas "></i>
+        </div>
+        <h4>Theme Colors</h4>
+        <div class="colors">
+          <span class="color-1" onclick="setActiveStyle('colours1')"></span>
+          <span class="color-2" onclick="setActiveStyle('colours2')"></span>
+          <span class="color-3" onclick="setActiveStyle('colours3')"></span>
+          <span class="color-4" onclick="setActiveStyle('colours4')"></span>
+          <span class="color-5" onclick="setActiveStyle('colours5')"></span>
+        </div>
+      </div>
+      <!-- Style Switcher Ends -->
+      <!-- javascript connection -->
+      <script src="./JS/style-shifter.js"></script>
+      <script src="./JS/script.js"></script>
+
     </body>
   </html>

@@ -7,6 +7,14 @@
     --text-black-700:#504e70;
 }
 
+body.dark{
+    --bg-black-900:#151515;
+    --bg-black-100:#222222;
+    --bg-black-50:#393939;
+    --text-black-900:#ffffff;
+    --text-black-700:#e9e9e9;
+}
+
 body{
     margin: 0%;
     padding: 0%;
@@ -66,7 +74,7 @@ body{
 }
 
 .section-title h2{
-    color: var(--text-back-900);
+    color: var(--text-black-900);
     font-size: 40px;
     font-weight: 700;
     position: relative;
@@ -146,7 +154,7 @@ body{
 }
 
 .aside .logo a{
-    color: var(--text-back-900);
+    color: var(--text-black-900);
     font-weight: 700;
     padding:15px 20px ;
     font-size: 30px;
@@ -237,7 +245,7 @@ body{
     font-size: 16px;
     font-weight: 600;
     border-bottom: 1px solid var(--bg-black-100);
-    color: var(--text-back-900);
+    color: var(--text-black-900);
     padding: 5px 15px;
     position: relative;
     transition: color 0.3s ease;
@@ -345,7 +353,7 @@ h3.my-profession{
     font-size: 24px;
     margin-bottom: 20px;
     font-weight: 700;
-    color: var(--text-back-900);
+    color: var(--text-black-900);
 }
 
 .about .about-content .about-text h3 span{
@@ -355,7 +363,7 @@ h3.my-profession{
 .about .about-content .about-text p{
     font-size: 16px;
     line-height: 25px;
-    color: var(--text-back-700);
+    color: var(--text-black-700);
 }
 
 .about .about-content .personal-info{
@@ -406,7 +414,7 @@ display: inline-block;
     line-height: 40px;
     font-weight: 600;
     font-size: 16px;
-    color: var(--text-back-900);
+    color: var(--text-black-900);
     text-transform: capitalize;
 }
 
@@ -529,6 +537,10 @@ display: inline-block;
     font-size: 16px;
     text-align: justify;
     text-transform: capitalize;
+}
+
+.about .about-content .timeline-box .timeline-text {
+    color: var(--text-black-700);
 }
 
 /* Services */
@@ -673,6 +685,9 @@ display: inline-block;
     margin-top: 10px;
 }
 
+.contact .contact-info-item p{
+    color: var(--text-black-700);
+}
 /* Media Query for screens with a maximum width of 1300px */
 @media (max-width: 1300px) {
     .aside {
@@ -721,7 +736,12 @@ display: inline-block;
         flex: 0 0 100%;
         max-width: 100%;
     }
-    
+    .about .about-content .personal-info .info-items{
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+
 
     /* Styles for screens up to 480px wide */
 }
