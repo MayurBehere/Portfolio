@@ -12,7 +12,7 @@
     transform: translateX(100%);
 }
 
-.style-switcher .open{
+.open{
     transform: translateX(-25px);
 }
 
@@ -65,18 +65,18 @@
     border-radius: 50%;
 }
 
-.style-switcher .color-1{
+ .colours1{
     background: #ec1839;
 }
-.style-switcher .color-2{
+ .colours2{
     background: #fa5b0f;
 }
-.style-switcher .color-3{
+ .colours3{
     background: #37b182;
 }
-.style-switcher .color-4{
+.colours4{
     background: #1845b4;
 }
-.style-switcher .color-5{
+ .colours5{
     background: #f021b2;
 }
