@@ -16,23 +16,34 @@ window.addEventListener("load",()=>{
 
 
 
-// Toggle Style Switcher
+// // Toggle Style Switcher
 
-const styleSwitcherToggle= document.querySelector(".style-switcher-toggler");
-styleSwitcherToggle.addEventListener("Click",()=>{
-    document.querySelector(".style-switcher").classList.toggle("open");
-});
+// const styleSwitcherToggle= document.querySelector(".style-switcher-toggler");
+// styleSwitcherToggle.addEventListener("Click",()=>{
+//     document.querySelector(".style-switcher").classList.toggle("open");
+// });
 
-// theme color
-const alternativeStyles =document.querySelector(".alternate-style");
-function setActiveStyle(colors){
+// // theme color
+// const alternativeStyles =document.querySelector(".alternate-style");
+// function setActiveStyle(colors){
 
-        alternativeStyles.forEach((style) =>{
-            if(colors===style.getAttribute("title")){
-                style.removeAttribute("disabled");
-            }
-            else{
-                style.setAttribute("disabled","true");
-            }
-        })
-}
+//         alternativeStyles.forEach((style) =>{
+//             if(colors===style.getAttribute("title")){
+//                 style.removeAttribute("disabled");
+//             }
+//             else{
+//                 style.setAttribute("disabled","true");
+//             }
+//         })
+// }
+
+
+
+
+// var typed = new Typed(".typing",{
+//     strings:["Web Designer","Web Developer","Student","Full-Stack Dev"];
+//     typeSpeed:100,
+//     BackSpeed:60,
+//     loop:true
+
+// })
